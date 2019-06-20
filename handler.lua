@@ -11,7 +11,7 @@ function ShoHeadersHandler:new()
 end
 
 function ShoHeadersHandler:access(conf)
-  JwtClaimsHeadersHandler.super.access(self)
+  ShoHeadersHandler.super.access(self)
 
   req_set_header("x-forwarded-host", conf.host)
   req_set_header("x-forwarded-port", conf.port)
