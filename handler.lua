@@ -3,8 +3,8 @@ local req_set_header = ngx.req.set_header
 
 local ShoHeadersHandler = BasePlugin:extend()
 
-CustomHandler.VERSION  = "1.0.0"
-CustomHandler.PRIORITY = 500
+ShoHeadersHandler.VERSION  = "1.0.1"
+ShoHeadersHandler.PRIORITY = 500
 
 function ShoHeadersHandler:new()
   ShoHeadersHandler.super.new(self, "sho-headers")
